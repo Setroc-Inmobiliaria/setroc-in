@@ -15,6 +15,14 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/src/blog`,
+      },
+    },
+    'gatsby-transformer-remark',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
