@@ -5,8 +5,8 @@ Como desplegar en proyecto en un entorno de desarrollo
 ## 🚀 Inicio Rápido
 
 1. **Instalación:**
-    - Clona este repositorio: `git clone URL_DEL_REPO`
-    - Navega al directorio del proyecto: `cd NOMBRE_DEL_DIRECTORIO`
+    - Clona este repositorio: `git clone`
+    - Navega al directorio del proyecto: `cd SETROC-In/`
     - Instala las dependencias: `npm install`
 
 2. **Desarrollo:**
