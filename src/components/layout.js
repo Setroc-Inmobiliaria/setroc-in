@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer
-         className="flex justify-center items-center h-28"
+         className="flex w-full justify-center items-center h-28"
           
         >
           © {new Date().getFullYear()} &middot; 
