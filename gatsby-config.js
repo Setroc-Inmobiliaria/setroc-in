@@ -16,6 +16,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: `Afacad`,
+            weights: [`400`, `700`],
+          },
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'blog',

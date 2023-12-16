@@ -30,7 +30,7 @@ const Header = () => {
         </div>
 
         {/* Navegación en pantallas grandes */}
-        <ul className="hidden md:flex flex-row w-full md:w-5/12 justify-between">
+        <ul className="hidden md:flex flex-row w-full md:w-5/12 justify-between font-afacad text-xl">
           <div className="flex flex-row gap-5 justify-start items-center ">
             <Link to="/propiedades">
               <li>Encuentra tu propiedad</li>
@@ -62,19 +62,19 @@ const Header = () => {
         {/* Menú desplegable en pantallas pequeñas */}
 
         <div
-          className={`md:hidden fixed flex top-0 h-full bg-blue-300 w-full  items-center border border-gray-300 ${
+          className={`md:hidden z-50 fixed flex top-0 h-full bg-blue-300 w-full border border-gray-300 ${
             showNavbar
               ? "left-0 transition-all duration-500 ease-out"
               : `left-[1000px] transition-all duration-700 ease-out`
           }`}
         >
-          <ul className="flex flex-col relative top-44 w-full justify-start items-center h-full gap-24">
+          <ul className="flex flex-col relative top-44 w-full items-center h-full gap-24 font-afacad text-2xl">
             <GrClose
               size={35}
               className="flex left-[80%] absolute -top-28"
               onClick={toggleCloseNavbar}
             />
-            <div className="flex flex-row gap-5 justify-start items-center ">
+            <div className="flex flex-row gap-5 justify-start items-center">
               <FaHouseDamage size={35} />
               <Link to="/propiedades">
                 <li>Encuentra tu propiedad</li>
@@ -102,28 +102,33 @@ const Header = () => {
 
             <div className="flex flex-row w-full justify-evenly relative top-16">
               <li>
-                <Link
-                  to="https://www.facebook.com/setroc.inmobiliario?mibextid=ZbWKwL"
+                <a
+                  href="https://www.facebook.com/setroc.inmobiliario?mibextid=ZbWKwL"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FaFacebookF size={45} color="#3b5998" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="https://www.tiktok.com/@setroc.inmobiliario?_t=8i6w7rOUpV7&_r=1"
+                <a
+                  href="https://www.tiktok.com/@setroc.inmobiliario?_t=8i6w7rOUpV7&_r=1"
                   target="_blank"
+                  rel="noreferrer"
+
                 >
                   <FaTiktok size={45} />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="https://www.instagram.com/setroc.inmobiliaria?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                <a
+                  href="https://www.instagram.com/setroc.inmobiliaria?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
                   target="_blank"
+                  rel="noreferrer"
+
                 >
                   <FaInstagram size={45} />
-                </Link>
+                </a>
               </li>
               <li>
                 <FaYoutube color="#CD201F" size={45} />
