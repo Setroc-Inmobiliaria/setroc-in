@@ -13,8 +13,8 @@ const CardComponent = ({ ...props }) => {
   })
 
   return (
-    <div className=" w-full flex flex-col md:flex-row items-center justify-evenly bg-red-600">
-      <div className="w-full md:w-[30%] flex flex-col">
+    <div className=" w-full flex flex-col md:flex-row items-center justify-evenly rounded-md bg-p6 p-5">
+      <div className="w-full md:w-[30%] flex flex-col rounded-md">
         <Slider
           adaptiveHeight={true}
           arrows={false}
@@ -23,6 +23,7 @@ const CardComponent = ({ ...props }) => {
           fade="true"
           infinite={true}
           autoplaySpeed={3000}
+          className="rounded-md"
         >
           {carouselItems}
         </Slider>

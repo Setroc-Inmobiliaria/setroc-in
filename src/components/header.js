@@ -26,7 +26,7 @@ const Header = () => {
     <header className="w-full h-32">
       <div className="w-full h-full flex flex-row md:justify-around justify-between items-center">
         <div className="h-full">
-          <img className="h-full" src={logo} alt="SETROC" />
+         <Link to="/"> <img className="h-full" src={logo} alt="SETROC" /></Link>
         </div>
 
         {/* Navegación en pantallas grandes */}
@@ -62,7 +62,7 @@ const Header = () => {
         {/* Menú desplegable en pantallas pequeñas */}
 
         <div
-          className={`md:hidden z-50 fixed flex top-0 h-full bg-blue-300 w-full border border-gray-300 ${
+          className={`md:hidden z-50 fixed flex top-0 h-full bg-p6 w-full border border-gray-300 ${
             showNavbar
               ? "left-0 transition-all duration-500 ease-out"
               : `left-[1000px] transition-all duration-700 ease-out`

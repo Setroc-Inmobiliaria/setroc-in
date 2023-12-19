@@ -16,6 +16,14 @@ module.exports = {
       fontFamily: {
         'afacad': ['Afacad', 'sans-serif'],
       },
+      colors: {
+        p1: '#91D1C5',
+        p2: '#42838A',
+        p3: '#276296',
+        p4: '#67ADD4',
+        p5: '#B2D3E7',
+        p6: '#D9DFEC'
+      }
     },
   },
   plugins: [

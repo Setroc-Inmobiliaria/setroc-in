@@ -1,7 +1,11 @@
-/* 
+
 @tailwind components;
 @layer components {
-  .responsive_nav {
-    @apply ;
+  .bg-image {
+    @apply 
+    bg-[url('../../assets/pais.jpg')]
+    bg-fixed
+    bg-cover
+    ;
   }
-} */
+}
