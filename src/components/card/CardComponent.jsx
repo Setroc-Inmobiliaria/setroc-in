@@ -4,10 +4,10 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const CardComponent = ({ ...props }) => {
-  const carouselItems = props.imagenes.map(imagen => {
+  const carouselItems = props.imagenes.map((imagen, index) => {
     return (
       <div className="w-full">
-        <img className="w-full" src={imagen} alt="imagen" key={imagen} />
+        <img className="w-full" src={imagen} alt="imagen" key={index} />
       </div>
     )
   })

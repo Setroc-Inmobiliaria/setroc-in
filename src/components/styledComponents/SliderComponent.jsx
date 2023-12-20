@@ -5,21 +5,22 @@ import { Slider } from "@mui/material";
 
 const SliderComponent = ({ type, coin, size, classes, value, onValueChange, limit, step, min, title }) => {
 
-    // const onSlide = (e, newValue) => {
-    //     e.preventDefault
-    //     onValueChange(newValue)
-    // }
+    const onSlide = (e, newValue) => {
+        e.preventDefault()
+        onValueChange(newValue)
+        console.log(newValue);
+    }
 
     return (
         <div className={`flex flex-col justify-center items-center`}>
-            <h4>{title}</h4>
+            <h4>{title} ${value}</h4>
             <Slider
                 min={min}
                 max={limit}
                 step={step}
                 // className={classes ? classes : null}
-                // onChange={onSlide}
-                // value={value}
+                onChange={onSlide}
+                value={value}
                 // defaultValue={value}
                 aria-label="Default"
                 valueLabelDisplay="off"
