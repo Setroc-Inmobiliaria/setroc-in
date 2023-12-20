@@ -11,9 +11,11 @@ const SliderComponent = ({ type, coin, size, classes, value, onValueChange, limi
         console.log(newValue);
     }
 
+    const formatValue = value.toLocaleString('es-MX')
+
     return (
         <div className={`flex flex-col justify-center items-center`}>
-            <h4>{title} ${value}</h4>
+            <h4>{title} ${formatValue}</h4>
             <Slider
                 min={min}
                 max={limit}

@@ -11,7 +11,7 @@ import building from "../../assets/building.svg"
 
 const LandingPage = () => {
 
-  const [precio, setPrecio] = useState(0)
+  const [precio, setPrecio] = useState(150000)
   const sayHola = () => {
     console.log("Hola ")
   }
