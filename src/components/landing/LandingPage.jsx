@@ -12,16 +12,18 @@ import building from "../../assets/building.svg"
 const LandingPage = () => {
 
   const [precio, setPrecio] = useState(150000)
+
   const sayHola = () => {
     console.log("Hola ")
   }
+
   return (
     <div className="bg-image flex flex-col justify-center items-center">
       <div className=" bg-p6 h-full w-full bg-opacity-30">
         <div className="flex w-full flex-col justify-center items-center md:items-start md:flex-row-reverse pt-12 gap-16 pb-16">
 
           <div className="w-full md:w-[50%] flex flex-col gap-10 ">
-            <h1 className="text-5xl md:text-7xl font-afacad text-center md:text-left w-full">
+            <h1 className="text-5xl md:text-7xl font-afacad text-center md:text-right w-full">
               Lorem ipsum dolor 
             </h1>
             <span className="text-center md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos laboriosam impedit ratione dolorem nihil fugit modi corrupti. At impedit, eveniet enim iusto non explicabo? Illo tenetur molestiae dolores esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eaque veniam suscipit est fugiat, commodi ducimus esse consequuntur eos incidunt itaque saepe cupiditate, velit sunt corrupti tenetur impedit asperiores sequi.</span>
@@ -55,11 +57,6 @@ const LandingPage = () => {
             </div>
           
         </div>
-        <div className="w-full h-full">
-          <img src={waves} alt="waves" className="" />
-        </div>
-
-        <HomeCards/>
       </div>
     </div>
   )
